@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      -name: localizamos la IP de origen
-       run: curl ifconfig.me
+      - name: localizamos la IP de origen
+        run: curl ifconfig.me
 
-      -name: que hora es dentro del runner
-       run: date
+      - name: que hora es dentro del runner
+        run: date
 
-      -name: haz un listado del directorio
-       run: ls -la
+      - name: haz un listado del directorio
+        run: ls -la
