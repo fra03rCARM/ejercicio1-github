@@ -9,6 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: saludamos al mundo
+        run: echo "Hola mundo desde github actions"
+
+      - uses: actions/checkout@v5
+
       - name: localizamos la IP de origen
         run: curl ifconfig.me
 
